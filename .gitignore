@@ -1,0 +1,36 @@
+# Dependencies
+/node_modules
+/package-lock.json
+/yarn.lock
+
+# Logs and debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.nyc_output/
+coverage/
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.idea/
+
+# Environment files
+.env
+.env.*
+!.env.example # Não ignora o template .env.example
+
+# Cypress specific files and folders
+# Ignora vídeos e screenshots gerados automaticamente
+/cypress/videos
+/cypress/screenshots
+/cypress/results/
+
+# Relatórios gerados pelo Mochawesome
+# Seu cypress.config.ts salva aqui:
+/cypress/reports/mochawesome-report
+/reports/mochawesome-report # Incluído pois você mencionou a pasta 'reports' no nível raiz
+
+/cypress/
